@@ -4,8 +4,6 @@
 
 ## Lessons learned
 
-## Lessons learned
-
 During this project, I first tried to load CSV files manually with SQL commands inspired by a SQL Server tutorial.
 
 Because I was working with PostgreSQL in VS Code, I ran into several issues:
