@@ -1,6 +1,14 @@
+## Customers Data Warehouse 
+The objective of this project is to build a data warehouse that contains the information of customers and products from 2 sources: Customer Relationship Management (CRM) and Entreprise Resource Planning (ERP). I aime to make it more clear and ready to use for analytic teams.
+
 ## Project architecture
+I use Medallion Architeture to exploit the data:
+- Bronze: raw data.
+- Silver: data cleaning.
+- Gold: ready to use.
 
 ## Data ingestion
+At the moment I use Python to load csv files to the database.
 
 ## Lessons learned
 
@@ -18,3 +26,4 @@ This approach was much faster, easier to debug, and more aligned with a real dat
 CSV files → Python ingestion → Bronze layer → SQL transformations → Silver → Gold
 
 ## Next steps
+- Building database.
