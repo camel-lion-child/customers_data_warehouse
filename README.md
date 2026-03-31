@@ -27,3 +27,4 @@ CSV files → Python ingestion → Bronze layer → SQL transformations → Silv
 
 ## Next steps
 - Building database.
+- Analyzing customer sales.
