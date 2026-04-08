@@ -26,5 +26,15 @@ This approach was much faster, easier to debug, and more aligned with a real dat
 CSV files → Python ingestion → Bronze layer → SQL transformations → Silver → Gold
 
 ## Next steps
-- Building database.
-- Analyzing customer sales.
+- Working with Silver Layer.
+
+## Project Planning & Workflow
+
+This project was carefully planned and tracked using Notion, including:
+- data warehouse architecture (Bronze / Silver / Gold)
+- ingestion strategy (SQL vs Python)
+- debugging iterations and improvements
+- task breakdown and execution
+
+🔗 Full planning workspace:
+[View Notion Project](https://www.notion.so/Customers-Data-Warehouse-1b684152101780dc9322e41b4fc93930)
