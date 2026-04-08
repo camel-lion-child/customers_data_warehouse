@@ -37,4 +37,4 @@ This project was carefully planned and tracked using Notion, including:
 - task breakdown and execution
 
 🔗 Full planning workspace:
-[View Notion Project](https://www.notion.so/Customers-Data-Warehouse-1b684152101780dc9322e41b4fc93930)
+[View Notion Project](https://www.notion.so/Customers-Data-Warehouse-1b684152101780dc9322e41b4fc93930?source=copy_link)
