@@ -5,14 +5,15 @@ import pandas as pd
 from sqlalchemy import create_engine
 import os
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent #resolve current script directory
 DATA_DIR = Path("/Users/talia/Desktop/datawarehouse_project")
 
+#read database connection string from environment varibales
 DB_URL = os.getenv("DB_URL")
 if DB_URL is None:
     raise ValueError("DB_URL environment variable is not set.")
 
-engine = create_engine(DB_URL)
+engine = create_engine(DB_URL) #create sqlalchemy engine to connect to the database
 
 SCHEMA = "bronze"
 
@@ -28,14 +29,14 @@ FILES = {
 print("Starting Bronze load...\n")
 
 for rel_path, table_name in FILES.items():
-    file_path = DATA_DIR / rel_path
+    file_path = DATA_DIR / rel_path #build full file path from relative path
     df = pd.read_csv(file_path)
 
     df.to_sql(
         table_name,
         engine,
         schema=SCHEMA,
-        if_exists="replace",
+        if_exists="replace", #recreate the table each time
         index=False
     )
 
